@@ -30,6 +30,7 @@ public class LoopSplash extends Activity {
                  //startActivityForResult(newPicIntent, 0);
                 Intent i = new Intent(LoopSplash.this, MainActivity.class);
                 startActivity(i);
+                finish();
             }      
         
     }; 

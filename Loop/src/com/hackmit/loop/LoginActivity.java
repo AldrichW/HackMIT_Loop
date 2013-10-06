@@ -1,5 +1,7 @@
 package com.hackmit.loop;
 
+import java.util.Map;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,19 +15,19 @@ public class LoginActivity extends Activity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_login2);
     
-	Button signupButton= (Button)findViewById(R.id.b_login);
-	signupButton.setOnClickListener(btnListener);
+	Button loginButton= (Button)findViewById(R.id.b_login);
+	loginButton.setOnClickListener(btnListener);
     }
 	
     private OnClickListener btnListener = new OnClickListener()
     {
 
         public void onClick(View v)
-        {   
-             //Intent newPicIntent = new Intent(v.getContext(), NewPictureActivity.class);
-             //startActivityForResult(newPicIntent, 0);
-            Intent eventIntent = new Intent(LoginActivity.this, EventFeed.class);
-            startActivity(eventIntent);
+        {  
+		      Intent setupIntent = new Intent(LoginActivity.this, Setup.class);
+		      startActivity(setupIntent);
+		      finish();
+		        	            
         } 
 
     }; 
