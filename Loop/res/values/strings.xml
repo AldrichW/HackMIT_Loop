@@ -9,5 +9,6 @@
     <string name="placeholder_pass">password</string>
     <string name="placeholder_confirm_pass">confirm password</string>
     <string name="signup">Sign Up</string>
+    <string name="login">Login</string>
 
 </resources>

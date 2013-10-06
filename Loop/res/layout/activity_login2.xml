@@ -12,9 +12,9 @@
         android:layout_marginBottom="20dp"
         android:src="@drawable/logo_blue" />
     
-    <LinearLayout
+   <LinearLayout
     android:layout_width="310dp"
-    android:layout_height="190dp"
+    android:layout_height="150dp"
     android:layout_gravity="center"
     android:orientation="vertical" 
     android:background="#FFFFFF">
@@ -38,26 +38,17 @@
         android:hint="@string/placeholder_pass"
         android:textSize="13dp"
         android:id="@+id/pass_field"/>
-    
-    <EditText
-        android:inputType="textPassword"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:hint="@string/placeholder_confirm_pass"
-        android:textSize="13dp"
-        android:id="@+id/confirm_pass_field"/>
+
     
     <Button 
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:background="@drawable/signup_1_90"
-        android:text="@string/signup"
+        android:text="@string/login"
         android:textColor="#FFFFFF"
-        android:layout_gravity="center" style=""
+        android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:id="@+id/b_signup" />
+        android:id="@+id/b_login" />
     
 	</LinearLayout>
 </LinearLayout>

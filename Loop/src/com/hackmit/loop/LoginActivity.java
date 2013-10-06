@@ -7,14 +7,13 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class MainActivity extends Activity {
-	
+public class LoginActivity extends Activity {
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_login);
+    setContentView(R.layout.activity_login2);
     
-	Button signupButton= (Button)findViewById(R.id.b_signup);
+	Button signupButton= (Button)findViewById(R.id.b_login);
 	signupButton.setOnClickListener(btnListener);
     }
 	
@@ -25,7 +24,7 @@ public class MainActivity extends Activity {
         {   
              //Intent newPicIntent = new Intent(v.getContext(), NewPictureActivity.class);
              //startActivityForResult(newPicIntent, 0);
-            Intent eventIntent = new Intent(MainActivity.this, EventFeed.class);
+            Intent eventIntent = new Intent(LoginActivity.this, EventFeed.class);
             startActivity(eventIntent);
         } 
 
