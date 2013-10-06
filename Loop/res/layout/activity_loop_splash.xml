@@ -8,12 +8,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".LoopSplash" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="63dp"
-        android:text="@string/MainTitle" />
+<ImageView
+    android:contentDescription="Loop Logo"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:src="@drawable/logo_blue" />
 
 </RelativeLayout>
