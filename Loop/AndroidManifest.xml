@@ -16,7 +16,8 @@
         android:debuggable="true" >
         <activity
             android:name="com.hackmit.loop.LoopSplash"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"> 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,11 +25,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.hackmit.loop.MainActivity">
+            android:name="com.hackmit.loop.MainActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"> 
         	<intent-filter>
         	    <action android:name="android.intent.action.MAIN"/>
         	    <category android:name="android.intent.category.DEFAULT"/>
         	</intent-filter>
+        </activity>
+        <activity
+            android:name="com.hackmit.loop.LoginActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        <activity
+            android:name="com.hackmit.loop.EventFeed"
+            android:label="Main Event Feed">
         </activity>
     </application>
 
